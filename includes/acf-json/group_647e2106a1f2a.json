@@ -1,13 +1,13 @@
 {
-    "key": "group_6450d13964cad",
-    "title": "Social Sharing",
+    "key": "group_647e2106a1f2a",
+    "title": "Featured Link",
     "fields": [
         {
-            "key": "field_6450d1398989f",
-            "label": "Display share icons",
-            "name": "sharing_enabled",
+            "key": "field_647e2106b797b",
+            "label": "Select content",
+            "name": "link",
             "aria-label": "",
-            "type": "true_false",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,24 +16,30 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "",
-            "ui_off_text": "",
+            "post_type": [
+                "post",
+                "page",
+                "resource"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
             "ui": 1
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "post"
+                "value": "blockhaus\/featured-link"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "side",
+    "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -41,5 +47,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685699595
+    "modified": 1686050835
 }

@@ -1,13 +1,13 @@
 {
-    "key": "group_6450d13964cad",
-    "title": "Social Sharing",
+    "key": "group_647876a8555b9",
+    "title": "Authors",
     "fields": [
         {
-            "key": "field_6450d1398989f",
-            "label": "Display share icons",
-            "name": "sharing_enabled",
+            "key": "field_647876a87907c",
+            "label": "Select author(s)",
+            "name": "authors",
             "aria-label": "",
-            "type": "true_false",
+            "type": "user",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,10 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
+            "role": "",
+            "return_format": "id",
+            "multiple": 1,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -38,8 +37,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685699595
+    "modified": 1686214744
 }

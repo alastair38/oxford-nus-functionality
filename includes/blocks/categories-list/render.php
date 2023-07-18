@@ -24,23 +24,6 @@ if( !empty($block['align']) ) {
     $className .= ' align' . $block['align'];
 }
 
-// Load values and assing defaults.
-$links = get_field('links');
-
-// var_dump($links);
-
-if($links): 
-
-$count = count($links);
-if($count === 1) {
-  $cols = 'md:grid-cols-1';
-  $img_size = 'profile';
-} else {
-  $cols = 'md:grid-cols-2';
-  $img_size = 'thumbnail';
-}
-
-endif;
 ?>
 
 
@@ -58,13 +41,13 @@ foreach ( $categories as $category ) {
 
 <div class="bg-neutral-light-100 flex flex-col justify-between">
   <div class="p-6 space-y-6">
-  <h2 class="col-span-full font-black"><?php echo esc_html( $category->name );?></h2>
+  <h3 class="col-span-full text-lg font-black"><?php echo esc_html( $category->name );?></h3>
   <hr class="w-full">
   <p>
   <?php echo esc_html( $category->description );?>
   </p>
   
-  <a class="rounded-md text-sm inline-block w-fit bg-secondary text-white px-6 py-2 ring-2 ring-offset-2 ring-transparent ring-offset-neutral-light-100 hover:ring-secondary focus:ring-secondary" href="<?php echo esc_url( get_category_link( $category->term_id ) );?>">View Section</a>
+  <a class="rounded-md text-sm inline-block w-fit bg-contrast text-white px-6 py-2 ring-2 ring-offset-2 ring-transparent ring-offset-neutral-light-100 hover:ring-contrast focus:ring-contrast" href="<?php echo esc_url( get_category_link( $category->term_id ) );?>">View Section</a>
   
   </div>
 <?php if($image):?>

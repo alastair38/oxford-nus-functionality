@@ -10,29 +10,20 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'blockhaus-test-' . $block['id'];
+$id = 'blockhaus-social-profiles-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'blockhaus-test p-6 flex items-center gap-6 bg-gray-100 rounded-md';
+$className = 'blockhaus-social-profiles';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
 if( !empty($block['align']) ) {
     $className .= ' align' . $block['align'];
 }
-if( !empty($block['textColor']) ) {
-  $className .= ' has-' . $block['textColor'] . '-color has-text-color';
-}
 
-if( !empty($block['backgroundColor']) ) {
-  $className .= ' has-' . $block['backgroundColor'] . '-background-color has-background';
-}
-
-?>
-
-  <?php if(function_exists('get_field')):
-  echo blockhaus_display_address();
-  endif;?>
+if(function_exists('get_field')):
+  echo blockhaus_display_social_profiles();
+endif;?>

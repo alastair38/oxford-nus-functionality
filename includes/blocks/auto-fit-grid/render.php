@@ -9,14 +9,8 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-// Create id attribute allowing for custom "anchor" value.
-$id = 'blockhaus-test-' . $block['id'];
-if( !empty($block['anchor']) ) {
-    $id = $block['anchor'];
-}
-
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'blockhaus-test p-6 flex items-center gap-6 bg-gray-100 rounded-md';
+$className = 'blockhaus-auto-fit-grid grid grid-cols-fit gap-6';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -28,11 +22,13 @@ if( !empty($block['textColor']) ) {
 }
 
 if( !empty($block['backgroundColor']) ) {
-  $className .= ' has-' . $block['backgroundColor'] . '-background-color has-background';
+  $className .= ' has-' . $block['backgroundColor'] . '-background-color has-background p-6';
 }
-
 ?>
 
-  <?php if(function_exists('get_field')):
-  echo blockhaus_display_address();
-  endif;?>
+
+
+
+<InnerBlocks class="<?php echo $className;?>"/>
+
+

@@ -79,14 +79,20 @@ include( plugin_dir_path( __FILE__ ) . 'includes/fields/blocks.php');
 
 include( plugin_dir_path( __FILE__ ) . 'includes/blocks/block-patterns.php');
 
+
 /**
  * Load Blocks
  */
 function blockhaus_load_blocks() {
-    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/archive-links/block.json' );
-    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/categories-list/block.json' );
+	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/address/block.json' );
+	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/authors-list/block.json' );
+	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/auto-fit-grid/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/featured-link/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/categories-list/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/curved-separator/block.json' );
-    register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/profile/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/profile/block.json' );
+	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/resources-link/block.json' );
+	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/social-media/block.json' );
 
 }
 add_action( 'init', 'blockhaus_load_blocks' );
