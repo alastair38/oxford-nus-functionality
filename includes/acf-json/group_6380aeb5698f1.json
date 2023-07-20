@@ -1,6 +1,6 @@
 {
     "key": "group_6380aeb5698f1",
-    "title": "Funders",
+    "title": "Funders list",
     "fields": [
         {
             "key": "field_6380af771729d",
@@ -128,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683659638
+    "modified": 1689843093
 }
