@@ -21,10 +21,10 @@
         "add_new_item": "Add New Author",
         "new_item_name": "New Author Name",
         "search_items": "Search Authors",
-        "popular_items": "Popular Authors",
-        "separate_items_with_commas": "Separate authors with commas",
-        "add_or_remove_items": "Add or remove authors",
-        "choose_from_most_used": "Choose from the most used authors",
+        "popular_items": "",
+        "separate_items_with_commas": "",
+        "add_or_remove_items": "",
+        "choose_from_most_used": "",
         "most_used": "",
         "not_found": "No authors found",
         "no_terms": "No authors",
@@ -62,9 +62,9 @@
     "default_term": {
         "default_term_enabled": "0"
     },
-    "sort": 0,
+    "sort": 1,
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1686216739
+    "modified": 1695645200
 }
