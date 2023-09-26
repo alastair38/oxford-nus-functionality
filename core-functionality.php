@@ -54,21 +54,21 @@ function acf_json_load_point( $path ) {
 }
 
 
-// Add options page
+// // Add options page
 
-if( function_exists('acf_add_options_page') ) {
+// if( function_exists('acf_add_options_page') ) {
 
-	acf_add_options_page(array(
-		'page_title' 	=> 'Theme Options',
-		'menu_title'	=> 'Theme Options',
-		'menu_slug' 	=> 'theme-options',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false,
-		'icon_url' => 'dashicons-admin-generic',
-		'update_button' => __('Update Theme Options', 'acf'),
-	));
+// 	acf_add_options_page(array(
+// 		'page_title' 	=> 'Theme Options',
+// 		'menu_title'	=> 'Theme Options',
+// 		'menu_slug' 	=> 'theme-options',
+// 		'capability'	=> 'edit_posts',
+// 		'redirect'		=> false,
+// 		'icon_url' => 'dashicons-admin-generic',
+// 		'update_button' => __('Update Theme Options', 'acf'),
+// 	));
 
-}
+// }
 
 // Include file to register ACF fields for registered blocks
 

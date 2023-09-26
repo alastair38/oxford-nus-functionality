@@ -206,6 +206,13 @@
                 "operator": "==",
                 "value": "theme-options"
             }
+        ],
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
         ]
     ],
     "menu_order": 0,
@@ -217,5 +224,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1669373018
+    "modified": 1695719797
 }
