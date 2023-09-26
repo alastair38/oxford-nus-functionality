@@ -96,24 +96,3 @@ function blockhaus_load_blocks() {
 
 }
 add_action( 'init', 'blockhaus_load_blocks' );
-
-/**
- * Adding a new (custom) block category.
- *
- * @param   array $block_categories                         Array of categories for block types.
- */
-function blockhaus_add_new_block_category( $block_categories ) {
-	
-	return array_merge(
-		$block_categories,
-		[
-			[
-				'slug'  => 'blockhaus',
-				'title' => esc_html__( 'Blockhaus', 'blockhaus' ),
-				'icon'  => 'schedule', // Slug of a WordPress Dashicon or custom SVG
-			],
-		]
-	);
-}
-
-add_filter( 'block_categories_all', 'blockhaus_add_new_block_category' );
