@@ -1,10 +1,10 @@
 {
   "name": "blockhaus/featured-link",
   "title": "Featured link",
-  "description": "Select a page or post to display in a block alongside the content's featured image",
+  "description": "Select a content item to display in a block alongside an image of your choosing",
   "script": "",
   "category": "blockhaus",
-  "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='currentColor' d='M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353a.75.75 0 0 0-1.18.928a5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z'/><path fill='currentColor' d='M7.28 11.153a3.936 3.936 0 0 1 5.88.353a.75.75 0 0 0 1.18-.928a5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z'/></svg>",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' aria-hidden='true' focusable='false'><path d='M10 17.389H8.444A5.194 5.194 0 1 1 8.444 7H10v1.5H8.444a3.694 3.694 0 0 0 0 7.389H10v1.5ZM14 7h1.556a5.194 5.194 0 0 1 0 10.39H14v-1.5h1.556a3.694 3.694 0 0 0 0-7.39H14V7Zm-4.5 6h5v-1.5h-5V13Z'></path></svg>",
   "apiVersion": 2,
   "keywords": [],
   "acf": {
@@ -23,7 +23,8 @@
     },
     "alignText": false,
     "fullHeight": false,
-    "inserter": false
+    "inserter": false,
+    "jsx": true
   },
   "attributes": {}
 }

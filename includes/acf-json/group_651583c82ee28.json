@@ -1,0 +1,99 @@
+{
+    "key": "group_651583c82ee28",
+    "title": "Profile",
+    "fields": [
+        {
+            "key": "field_651583c85b54d",
+            "label": "Profile",
+            "name": "profile",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "person"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_65cbb0c30c1d6",
+            "label": "Show HOPE biography",
+            "name": "alt_biog",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Show the HOPE biography instead of the default biography",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65ca5f12585e3",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65ca5f12585e3",
+            "label": "Simplified Profile",
+            "name": "simplified",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Show a simplified profile without biography",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "blockhaus\/profile-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1707847993
+}

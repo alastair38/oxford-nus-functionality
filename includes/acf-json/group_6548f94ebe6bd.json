@@ -1,0 +1,63 @@
+{
+    "key": "group_6548f94ebe6bd",
+    "title": "Projects List",
+    "fields": [
+        {
+            "key": "field_65158a0d40686",
+            "label": "Projects",
+            "name": "projects",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "project"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_6513fb631e93f",
+                "field_6548fa3f1fe71",
+                "field_65cb4f8ef2359",
+                "field_65cb4face81e3"
+            ],
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "person"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "output"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1708609910
+}

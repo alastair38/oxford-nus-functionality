@@ -1,0 +1,43 @@
+{
+    "key": "group_65d7576734bf8",
+    "title": "Content fields",
+    "fields": [
+        {
+            "key": "field_65d75767926a3",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The following fields let you assign custom data to your content. For example, you can select the project team, add funder details and choose relevant outputs (when editing a 'project'). The available fields will vary for different content types.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": -2,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1708624924
+}

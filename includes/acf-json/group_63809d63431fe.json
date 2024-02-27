@@ -132,6 +132,26 @@
                     "new_lines": ""
                 }
             ]
+        },
+        {
+            "key": "field_65d36cd28c903",
+            "label": "Outputs description",
+            "name": "output_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "This will be used to described the page to search engines and may be displayed on the main 'Outputs' page. The description should be between 60 and 170 characters.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -139,7 +159,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "theme-options"
+                "value": "theme-settings"
             }
         ],
         [
@@ -159,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695719797
+    "modified": 1708354862
 }

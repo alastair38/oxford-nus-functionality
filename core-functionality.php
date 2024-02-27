@@ -72,7 +72,7 @@ function acf_json_load_point( $path ) {
 
 // Include file to register ACF fields for registered blocks
 
-include( plugin_dir_path( __FILE__ ) . 'includes/fields/blocks.php');
+//include( plugin_dir_path( __FILE__ ) . 'includes/fields/blocks.php');
 
 
 // Include file to register Block Patterns
@@ -85,12 +85,16 @@ include( plugin_dir_path( __FILE__ ) . 'includes/fields/blocks.php');
  */
 function blockhaus_load_blocks() {
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/address/block.json' );
-	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/authors-list/block.json' );
+	
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/auto-fit-grid/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/featured-link/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/categories-list/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/curved-separator/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/profile/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-collaborators/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-leads/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-personnel/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/projects-list/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/resources-link/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/social-media/block.json' );
 

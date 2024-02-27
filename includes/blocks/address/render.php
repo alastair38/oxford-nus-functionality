@@ -25,5 +25,5 @@ if( !empty($block['align']) ) {
 }
 
 if(function_exists('get_field')):
-  echo blockhaus_display_address();
+  echo get_field('work_title', $post_id);
 endif;?>

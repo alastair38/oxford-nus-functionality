@@ -1,0 +1,53 @@
+{
+    "key": "group_6548fa3f1620c",
+    "title": "Outputs",
+    "fields": [
+        {
+            "key": "field_6548fa3f1fe71",
+            "label": "Select outputs",
+            "name": "outputs",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "These outputs will show at the bottom of the project page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "output"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_65158a0d40686"
+            ],
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1709037769
+}

@@ -1,0 +1,51 @@
+{
+    "key": "group_65dc9fd4084e3",
+    "title": "Additional Projects",
+    "fields": [
+        {
+            "key": "field_65dc9fd4013ab",
+            "label": "Additional projects",
+            "name": "additional_projects",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "Select any additional projects you wish to display alongside the child content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "project"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 1,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "blockhaus\/projects-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1708958090
+}
