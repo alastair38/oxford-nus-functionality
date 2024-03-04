@@ -96,7 +96,5 @@ function blockhaus_load_blocks() {
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-personnel/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/projects-list/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/resources-link/block.json' );
-	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/social-media/block.json' );
-
 }
 add_action( 'init', 'blockhaus_load_blocks' );

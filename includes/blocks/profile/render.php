@@ -30,7 +30,7 @@ $simplified = get_field('simplified');
 ?>
 
 
-<div id="profile-<?php echo $profile->ID;?>" class="flex flex-col p-6 mb-6 w-full h-full border rounded-md gap-6 shadow-md">
+<div id="profile-<?php echo $profile->ID;?>" class="flex flex-col p-2 md:p-6 mb-6 w-full h-full border rounded-md gap-6 shadow-md">
  
   <div class="flex flex-col md:flex-row gap-6 items-center">
   <?php

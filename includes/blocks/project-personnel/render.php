@@ -15,8 +15,7 @@ if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
-$profilesObj = get_field('assoc_members', $post_id);
-$profiles = $profiles['people'];
+$profiles = get_field('assoc_members_people', $post_id);
   
   if($profiles):?>
   
