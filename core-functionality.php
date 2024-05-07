@@ -5,6 +5,21 @@ Description: Custom fields and Gutenberg blocks
 Text Domain: blockhaus
 */
 
+if ( ! function_exists( 'is_plugin_active' ) ) {
+  include_once ABSPATH . 'wp-admin/includes/plugin.php';
+}
+
+// Check if ACF PRO is active
+if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
+  // Abort all bundling, ACF PRO plugin takes priority
+  return;
+}
+
+// Check if another plugin or theme has bundled ACF
+if ( defined( 'MY_ACF_PATH' ) ) {
+  return;
+}
+
 // Define path and URL to the ACF plugin.
 define( 'MY_ACF_PATH', plugin_dir_path( __FILE__ ) . '/includes/acf/' );
 // define( 'MY_ACF_URL', get_stylesheet_directory_uri() . '/includes/acf/' );
