@@ -104,7 +104,9 @@ function blockhaus_load_blocks() {
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/auto-fit-grid/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/featured-link/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/categories-list/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/cookie-consent/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/curved-separator/block.json' );
+  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/funder/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/profile/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-collaborators/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-leads/block.json' );
@@ -113,3 +115,55 @@ function blockhaus_load_blocks() {
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/resources-link/block.json' );
 }
 add_action( 'init', 'blockhaus_load_blocks' );
+
+function blockhaus_cookie_scripts() {
+	if(function_exists('get_field')):
+
+		$cookiesSet = get_field('cookies_settings', 'option');
+		$consentPanel = get_field('consent_panel_settings', 'option');
+    
+    // get privacy and contact pages if cookies are set / cookie banner needed
+		if($cookiesSet && $consentPanel):
+      $privacyPage = $consentPanel['privacy_page'];
+      $contactPage = $consentPanel['contact_page'];
+		endif;
+		
+	
+    // get settings for analytics and embedded media content, if cookies are being set
+    if($cookiesSet):
+      $analyticsSet = get_field('analytics_settings', 'option');	
+      $embeddedContent = get_field('social_media_settings', 'option');
+    endif;
+	
+	endif;
+	
+		if($cookiesSet) {
+				wp_enqueue_script( 'cookie-js', 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js', array(), '', true );
+				
+				wp_enqueue_script( 'cookie-init-js', plugin_dir_url( __FILE__ ) . 'includes/js/cookieinit.js', array('cookie-js'), wp_get_theme()->get( 'Version' ), true );
+	
+				wp_enqueue_style( 'cookie-style', 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css', array(), '', 'all' ); 
+				
+				wp_localize_script("cookie-js", "WPVars", array(
+					"contact_page" => $contactPage,
+					"privacy_page" => $privacyPage,
+					"analytics" => $analyticsSet,
+					"media" => $embeddedContent,
+				)
+			);
+	
+		}
+		
+}
+
+add_action( 'wp_enqueue_scripts', 'blockhaus_cookie_scripts' );
+
+// add type="module" to permit import of main script in cookieinit.js
+
+add_filter('script_loader_tag', 'add_attributes_to_script', 10, 3); 
+function add_attributes_to_script( $tag, $handle, $src ) {
+    if ( 'cookie-init-js' === $handle ) {
+        $tag = '<script type="module" src="' . esc_url( $src ) . '" id="cookie-init-js" ></script>';
+    } 
+    return $tag;
+}

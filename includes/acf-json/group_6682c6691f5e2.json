@@ -1,0 +1,98 @@
+{
+    "key": "group_6682c6691f5e2",
+    "title": "Funder",
+    "fields": [
+        {
+            "key": "field_6682c66927182",
+            "label": "Funder",
+            "name": "funder",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "grant-funder",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "field_type": "select",
+            "allow_null": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6682c6692ab7b",
+            "label": "Show HOPE biography",
+            "name": "alt_biog",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Show the HOPE biography instead of the default biography",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6682c6692e50e",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_6682c6692e50e",
+            "label": "Simplified Profile",
+            "name": "simplified",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Show a simplified profile without biography",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "blockhaus\/funder-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1719846727
+}

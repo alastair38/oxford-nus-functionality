@@ -64,14 +64,13 @@ $simplified = get_field('simplified');
 
 <?php endif; ?>
 
-<?php 
-  $further_info = get_field('further_information', $profile->ID); 
-  if($further_info):?>
   
-  <a class="flex gap-2 w-fit items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo $further_info; ?>">Further information</a>
+  <a class="flex gap-2 w-fit items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo get_the_permalink( $profile->ID ); ?>">Further information
+  
+  </a>
 
 
-<?php endif; ?>
+
 
 <?php $projects = get_field('projects', $profile->ID);
   if( $projects && !$simplified ): ?>

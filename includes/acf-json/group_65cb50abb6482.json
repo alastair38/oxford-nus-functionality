@@ -1,243 +1,231 @@
 {
-    "key": "group_65cb50abb6482",
-    "title": "Project Team",
-    "fields": [
+  "key": "group_65cb50abb6482",
+  "title": "Project Team",
+  "fields": [
+    {
+      "key": "field_65dc89875156f",
+      "label": "Hide in sidebar",
+      "name": "sidebar_hide",
+      "aria-label": "",
+      "type": "true_false",
+      "instructions": "Select this to hide the project team details from the sidebar on the front-end",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "message": "",
+      "default_value": 0,
+      "ui_on_text": "",
+      "ui_off_text": "",
+      "ui": 1
+    },
+    {
+      "key": "field_65ddcdc5425e1",
+      "label": "Project leads",
+      "name": "members",
+      "aria-label": "",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
         {
-            "key": "field_65dc89875156f",
-            "label": "Hide in sidebar",
-            "name": "sidebar_hide",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "Select this to hide the project team details from the sidebar on the front-end",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
+          "key": "field_65ddcd8791669",
+          "label": "Title",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Set the title that will show for this grouping on the front-end. By default it is 'Project Leads'.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Project Leads",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
         },
         {
-            "key": "field_65ddcdc5425e1",
-            "label": "Project leads",
-            "name": "members",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_65ddcd8791669",
-                    "label": "Title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Set the title that will show for this grouping on the front-end. By default it is 'Project Leads'.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Project Leads",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_6513fb631e93f",
-                    "label": "Choose people",
-                    "name": "people",
-                    "aria-label": "",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "bg-neutral-light-100",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "person"
-                    ],
-                    "post_status": "",
-                    "taxonomy": "",
-                    "return_format": "object",
-                    "multiple": 1,
-                    "allow_null": 0,
-                    "bidirectional": 1,
-                    "bidirectional_target": [
-                        "field_65158a0d40686"
-                    ],
-                    "ui": 1
-                }
-            ]
-        },
-        {
-            "key": "field_65ddce03788e9",
-            "label": "Associated Personnel",
-            "name": "assoc_members",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_65ddcee8b7ff6",
-                    "label": "Title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Set the title that will show for this grouping on the front-end. By default it is 'Associated Personnel'.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Associated Personnel",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_65cb4f8ef2359",
-                    "label": "Choose people",
-                    "name": "people",
-                    "aria-label": "",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "person"
-                    ],
-                    "post_status": "",
-                    "taxonomy": "",
-                    "return_format": "object",
-                    "multiple": 1,
-                    "allow_null": 0,
-                    "bidirectional": 1,
-                    "bidirectional_target": [
-                        "field_65158a0d40686"
-                    ],
-                    "ui": 1
-                }
-            ]
-        },
-        {
-            "key": "field_65ddce1fbd416",
-            "label": "Lead collaborators",
-            "name": "collab_members",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_65ddcf201cef7",
-                    "label": "Title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Set the title that will show for this grouping on the front-end. By default it is 'Lead Collaborators'.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Lead Collaborators",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_65cb4face81e3",
-                    "label": "Choose people",
-                    "name": "people",
-                    "aria-label": "",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "person"
-                    ],
-                    "post_status": "",
-                    "taxonomy": "",
-                    "return_format": "object",
-                    "multiple": 1,
-                    "allow_null": 0,
-                    "bidirectional": 1,
-                    "bidirectional_target": [
-                        "field_65158a0d40686"
-                    ],
-                    "ui": 1
-                }
-            ]
+          "key": "field_6513fb631e93f",
+          "label": "Choose people",
+          "name": "people",
+          "aria-label": "",
+          "type": "post_object",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "bg-neutral-light-100",
+            "id": ""
+          },
+          "post_type": ["person"],
+          "post_status": "",
+          "taxonomy": "",
+          "return_format": "object",
+          "multiple": 1,
+          "allow_null": 0,
+          "bidirectional": 1,
+          "bidirectional_target": ["field_65158a0d40686"],
+          "ui": 1
         }
-    ],
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "project"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "side",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": true,
-    "description": "",
-    "show_in_rest": 0,
-    "modified": 1709036482
+      ]
+    },
+    {
+      "key": "field_65ddce03788e9",
+      "label": "Associated Personnel",
+      "name": "assoc_members",
+      "aria-label": "",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_65ddcee8b7ff6",
+          "label": "Title",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Set the title that will show for this grouping on the front-end. By default it is 'Associated Personnel'.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Associated Personnel",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_65cb4f8ef2359",
+          "label": "Choose people",
+          "name": "people",
+          "aria-label": "",
+          "type": "post_object",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "post_type": ["person"],
+          "post_status": "",
+          "taxonomy": "",
+          "return_format": "object",
+          "multiple": 1,
+          "allow_null": 0,
+          "bidirectional": 1,
+          "bidirectional_target": ["field_65158a0d40686"],
+          "ui": 1
+        }
+      ]
+    },
+    {
+      "key": "field_65ddce1fbd416",
+      "label": "Collaborators",
+      "name": "collab_members",
+      "aria-label": "",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_65ddcf201cef7",
+          "label": "Title",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "Set the title that will show for this grouping on the front-end. By default it is 'Collaborators'.",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Collaborators",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_65cb4face81e3",
+          "label": "Choose people",
+          "name": "people",
+          "aria-label": "",
+          "type": "post_object",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "post_type": ["person"],
+          "post_status": "",
+          "taxonomy": "",
+          "return_format": "object",
+          "multiple": 1,
+          "allow_null": 0,
+          "bidirectional": 1,
+          "bidirectional_target": ["field_65158a0d40686"],
+          "ui": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "project"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "side",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1709036482
 }

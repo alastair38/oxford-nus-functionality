@@ -50,6 +50,34 @@
                     "parent_repeater": "field_65ca4cc2a12d0"
                 }
             ]
+        },
+        {
+            "key": "field_6683d8d48c2c6",
+            "label": "Grant(s)",
+            "name": "project_grants",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "grant"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_65158a0d40686"
+            ],
+            "ui": 1
         }
     ],
     "location": [
@@ -70,5 +98,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708610796
+    "modified": 1719917600
 }
