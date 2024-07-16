@@ -57,10 +57,11 @@
                 "class": "",
                 "id": ""
             },
+            "admin_column_enabled": 0,
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
+            "tabs": "text",
             "media_upload": 0,
+            "toolbar": "full",
             "delay": 0
         },
         {
@@ -77,10 +78,11 @@
                 "class": "",
                 "id": ""
             },
+            "admin_column_enabled": 0,
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
+            "tabs": "text",
             "media_upload": 0,
+            "toolbar": "full",
             "delay": 0
         },
         {
@@ -119,5 +121,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721061366
+    "modified": 1721126314
 }
