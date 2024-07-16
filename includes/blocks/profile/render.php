@@ -30,7 +30,7 @@ $simplified = get_field('simplified');
 ?>
 
 
-<div id="profile-<?php echo $profile->ID;?>" class="flex flex-col p-2 md:p-6 mb-6 w-full h-full border rounded-md gap-6 shadow-md">
+<div id="profile-<?php echo $profile->ID;?>" class="flex items-center md:items-start flex-col p-3 md:p-6 mb-6 w-full h-full border rounded-md gap-6 shadow-md">
  
   <div class="flex flex-col md:flex-row gap-6 items-center">
   <?php
@@ -38,14 +38,14 @@ $simplified = get_field('simplified');
   
   if( $profile ): 
   echo get_the_post_thumbnail($profile->ID, array( 80, 80), ['class' => 'rounded-full w-20 h-20 aspect-square object-cover'] );?>
-  <div>
+  <div class="text-center md:text-left">
     <h3 class="font-black"><?php echo esc_html( $profile->post_title ); ?></h3>
     <p class="text-sm"><?php echo esc_html( get_field('work_title', $profile->ID) ); ?></p>
   </div>
   
   </div>
   
-  <?php 
+  <!-- <?php 
   
   $alt_biog = get_field('hope_biography', $profile->ID);
   $biog = get_field('biography', $profile->ID); 
@@ -60,19 +60,19 @@ $simplified = get_field('simplified');
   
   else:
   
-  endif;?>
+  endif;?> -->
 
 <?php endif; ?>
 
   
-  <a class="flex gap-2 w-fit items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo get_the_permalink( $profile->ID ); ?>">Further information
+  <a class="gap-2 ml-auto mr-auto md:ml-0 w-fit items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo get_the_permalink( $profile->ID ); ?>">Further information
   
   </a>
 
 
 
 
-<?php $projects = get_field('projects', $profile->ID);
+<!-- <?php $projects = get_field('projects', $profile->ID);
   if( $projects && !$simplified ): ?>
   <hr aria-hidden="true" class="border-neutral-light-900">
   <div class="flex flex-col gap-4">
@@ -88,7 +88,7 @@ $simplified = get_field('simplified');
       </div>
   </div>
 
-<?php wp_reset_postdata(); endif; ?>
+<?php wp_reset_postdata(); endif; ?> -->
 
 </div>
   

@@ -39,10 +39,21 @@ endif;
 
   
   if( $funder ): 
+    
+    $logo = get_field('funder_logo', 'term_'.$funder->term_id);
+   
   // echo get_the_post_thumbnail($funder->ID, array( 80, 80), ['class' => 'rounded-full w-20 h-20 aspect-square object-cover'] );
   ?>
-  <div id="funder-<?php echo $funder->ID;?>" class="space-y-6">
+  <div id="funder-<?php echo $funder->term_id;?>" class="space-y-6 py-6">
+    <div class="flex items-center gap-3">
+    
+    <?php if($logo):?>
+    <figure class="flex items-center rounded-fullbg-neutral-light-100">
+    <img class="object-contain h-8"  src="<?php echo $logo['sizes']['medium'];?>" />
+    </figure>
+    <?php endif;?>
     <h2 class="font-black"><?php echo $funder->name; ?></h2>
+  </div>
     <?php if($grants):?>
      <div class="flex flex-col gap-6">
       <?php foreach($grants as $grant):

@@ -23,6 +23,27 @@
             "append": ""
         },
         {
+            "key": "field_66954f9c2d78d",
+            "label": "Disable biography page",
+            "name": "disable_biography_page",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "message": "Check this to disable any links to the person's individual biography page",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_6513fd6b3bd2e",
             "label": "Biography",
             "name": "biography",
@@ -98,5 +119,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707845632
+    "modified": 1721061366
 }
