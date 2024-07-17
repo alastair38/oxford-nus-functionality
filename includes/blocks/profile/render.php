@@ -45,27 +45,11 @@ $simplified = get_field('simplified');
   
   </div>
   
-  <!-- <?php 
-  
-  $alt_biog = get_field('hope_biography', $profile->ID);
-  $biog = get_field('biography', $profile->ID); 
-  
-  if($alt_biog && !$simplified):
-    
-    echo $alt_biog;
-    
-  elseif($biog && !$simplified):
-  
-    echo $biog;
-  
-  else:
-  
-  endif;?> -->
 
 <?php endif; ?>
 
   
-  <a class="gap-2 ml-auto mr-auto md:ml-0 w-fit items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo get_the_permalink( $profile->ID ); ?>">Further information
+  <a class="gap-2 ml-auto mr-auto md:ml-0 w-fit no-underline items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo get_the_permalink( $profile->ID ); ?>">Further information
   
   </a>
 

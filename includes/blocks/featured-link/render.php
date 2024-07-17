@@ -51,7 +51,7 @@ if(function_exists('get_field')):
 <?php if(!is_admin()):
 echo 'href="' . $featuredLink . '"';
 endif;?>
-class="flex"
+class="flex no-underline"
 rel="bookmark" aria-label="Read <?php echo get_the_title($featuredLink);?>">
 
 <InnerBlocks

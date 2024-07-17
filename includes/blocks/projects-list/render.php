@@ -29,7 +29,7 @@ $args = array(
   if(! empty($children || $additionalPosts) ):?>
     <div class="grid grid-cols-fit gap-6">
    <?php foreach($children as $child) {?>
-      <a href="<?php echo get_the_permalink($child->ID);?>" class="shadow-md hover:outline outline-primary focus-visible:outline rounded-md overflow-hidden"> 
+      <a href="<?php echo get_the_permalink($child->ID);?>" class="shadow-md hover:outline outline-primary focus-visible:outline rounded-md overflow-hidden no-underline"> 
       <?php echo get_the_post_thumbnail($child->ID, 'blog', ['class' => 'w-full', 'aria-hidden' => 'true']);?>
       <div class="p-6">
        <h3 class="font-bold"><?php echo get_the_title($child->ID);?></h3>

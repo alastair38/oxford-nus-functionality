@@ -1,10 +1,66 @@
 {
     "key": "group_65dc6387d018d",
-    "title": "Deliverables",
+    "title": "Details",
     "fields": [
         {
+            "key": "field_6697a76074a8c",
+            "label": "Start date",
+            "name": "start_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "display_format": "d\/m\/Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_6697a7812b5ac",
+            "label": "End date",
+            "name": "end_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "display_format": "d\/m\/Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_6697a52b334f6",
+            "label": "Grant link",
+            "name": "grant_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_65dc6388599c4",
-            "label": "Deliverable",
+            "label": "Deliverables",
             "name": "deliverable",
             "aria-label": "",
             "type": "repeater",
@@ -29,7 +85,7 @@
                     "label": "Description",
                     "name": "description",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -38,11 +94,12 @@
                         "class": "",
                         "id": ""
                     },
+                    "admin_column_enabled": 0,
                     "default_value": "",
                     "maxlength": "",
+                    "rows": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "new_lines": "",
                     "parent_repeater": "field_65dc6388599c4"
                 },
                 {
@@ -69,7 +126,7 @@
                     "label": "Assigned to",
                     "name": "assigned_to",
                     "aria-label": "",
-                    "type": "taxonomy",
+                    "type": "relationship",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -78,15 +135,20 @@
                         "class": "",
                         "id": ""
                     },
-                    "taxonomy": "grant-people",
-                    "add_term": 0,
-                    "save_terms": 1,
-                    "load_terms": 0,
-                    "return_format": "id",
-                    "field_type": "multi_select",
-                    "allow_null": 1,
+                    "admin_column_enabled": 0,
+                    "post_type": [
+                        "person"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "min": "",
+                    "max": "",
+                    "elements": "",
                     "bidirectional": 0,
-                    "multiple": 0,
                     "bidirectional_target": [],
                     "parent_repeater": "field_65dc6388599c4"
                 },
@@ -132,5 +194,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708943122
+    "modified": 1721214974
 }
