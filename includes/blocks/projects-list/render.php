@@ -42,7 +42,7 @@ $args = array(
   <?php if(! empty($additionalPosts)):
   
   foreach($additionalPosts as $additionalPost) {?>
-    <a href="<?php echo get_the_permalink($additionalPost->ID);?>" class="shadow-md rounded-md overflow-hidden"> 
+    <a href="<?php echo get_the_permalink($additionalPost->ID);?>" class="shadow-md hover:outline outline-primary focus-visible:outline rounded-md overflow-hidden no-underline"> 
     <?php echo get_the_post_thumbnail($additionalPost->ID, 'blog', ['class' => 'w-full', 'aria-hidden' => 'true']);?>
     <div class="p-6">
      <h3 class="font-bold"><?php echo get_the_title($additionalPost->ID);?></h3>

@@ -44,24 +44,25 @@ endif;
    
   // echo get_the_post_thumbnail($funder->ID, array( 80, 80), ['class' => 'rounded-full w-20 h-20 aspect-square object-cover'] );
   ?>
-  <div id="funder-<?php echo $funder->term_id;?>" class="space-y-6 py-6">
+  <div id="funder-<?php echo $funder->term_id;?>" class="space-y-6 p-6 shadow-md rounded-md">
     <div class="flex items-center gap-3">
-    
+   
     <?php if($logo):?>
-    <figure class="flex items-center rounded-fullbg-neutral-light-100">
-    <img class="object-contain h-8"  src="<?php echo $logo['sizes']['medium'];?>" />
+    <figure class="flex h-8 w-8 md:h-20 md:w-20 p-2 items-center">
+    <img class="object-contain h-full w-full"  src="<?php echo $logo['sizes']['medium'];?>" />
     </figure>
     <?php endif;?>
-    <h2 class="font-black"><?php echo $funder->name; ?></h2>
+     <h2 class="font-black leading-tight"><?php echo $funder->name; ?></h2>
   </div>
     <?php if($grants):?>
      <div class="flex flex-col gap-6">
+     
       <?php foreach($grants as $grant):
         $projects = get_field('projects', $grant->ID);?>
         
-        <div class="shadow-md rounded-md p-6 space-y-6">
+        <div class="rounded-md bg-neutral-light-100 p-6 space-y-6">
           <div class="space-y-3">
-          <h3 class="font-black"><?php echo $grant->post_title;?></h3>
+          <h3 class="font-black flex flex-row-reverse flex-wrap justify-between"><span class="hidden md:flex text-sm font-normal bg-neutral-dark-900 text-white px-3 py-1 rounded-full">Grant</span><?php echo $grant->post_title;?></h3>
           <p><?php echo get_the_excerpt( $grant->ID );?></p>
        </div>
           <hr aria-hidden="true" class="border-neutral-light-900">

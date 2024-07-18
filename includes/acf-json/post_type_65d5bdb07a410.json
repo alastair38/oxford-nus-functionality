@@ -16,7 +16,7 @@
         "view_item": "View Grant",
         "view_items": "View Grants",
         "add_new_item": "Add New Grant",
-        "add_new": "",
+        "add_new": "Add New Grant",
         "new_item": "New Grant",
         "parent_item_colon": "Parent Grant:",
         "search_items": "Search Grants",
@@ -80,5 +80,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1721215059
+    "modified": 1721310192
 }

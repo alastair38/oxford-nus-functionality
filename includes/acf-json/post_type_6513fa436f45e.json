@@ -16,7 +16,7 @@
         "view_item": "View Person",
         "view_items": "View People",
         "add_new_item": "Add New Person",
-        "add_new": "",
+        "add_new": "Add New Person",
         "new_item": "New Person",
         "parent_item_colon": "Parent Person:",
         "search_items": "Search People",
@@ -81,5 +81,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1719828752
+    "modified": 1721310253
 }

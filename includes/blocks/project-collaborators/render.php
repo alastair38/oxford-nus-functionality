@@ -57,7 +57,7 @@ $profiles = get_field('collab_members_people', $post_id);
     
     if($further_info):?>
       
-      <a class="flex gap-2 w-fit items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo $further_info; ?>">Further information</a>
+      <a class="flex gap-2 w-fit no-underline items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-2 focus:ring-2 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo $further_info; ?>">Further information</a>
       
     <?php endif; ?>
     
