@@ -51,11 +51,11 @@ if(function_exists('get_field')):
 <?php if(!is_admin()):
 echo 'href="' . $featuredLink . '"';
 endif;?>
-class="flex no-underline"
+class="flex no-underline blockhaus-featured-link"
 rel="bookmark" aria-label="Read <?php echo get_the_title($featuredLink);?>">
 
 <InnerBlocks
-        class="grid grid-cols-1 transition-all duration-250 md:grid-cols-2 hover:ring-2 ring-offset-2 hover:ring-contrast group items-center bg-neutral-light-100 rounded-md overflow-hidden"
+        class="grid grid-cols-1 w-full transition-all duration-250 md:grid-cols-2 hover:ring-2 ring-offset-2 hover:ring-contrast group items-center bg-neutral-light-100 rounded-md overflow-hidden"
         template="<?php echo esc_attr( wp_json_encode( $template ) ); ?>"
         templateLock="all"
     />
