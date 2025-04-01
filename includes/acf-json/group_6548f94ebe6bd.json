@@ -1,13 +1,13 @@
 {
     "key": "group_6548f94ebe6bd",
-    "title": "Projects List",
+    "title": "Output details",
     "fields": [
         {
-            "key": "field_65158a0d40686",
-            "label": "Projects",
-            "name": "projects",
+            "key": "field_67e700db17ac6",
+            "label": "Associated Projects",
+            "name": "associated_projects",
             "aria-label": "",
-            "type": "post_object",
+            "type": "relationship",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -20,19 +20,112 @@
             "post_type": [
                 "project"
             ],
-            "post_status": "",
+            "post_status": [
+                "publish"
+            ],
             "taxonomy": "",
+            "filters": [
+                "search"
+            ],
             "return_format": "object",
-            "multiple": 1,
-            "allow_null": 0,
+            "min": "",
+            "max": "",
+            "elements": "",
             "bidirectional": 1,
             "bidirectional_target": [
-                "field_6513fb631e93f",
-                "field_6548fa3f1fe71",
-                "field_65cb4f8ef2359",
-                "field_65cb4face81e3"
+                "field_6548fa3f1fe71"
+            ]
+        },
+        {
+            "key": "field_67e707b1941cb",
+            "label": "Associated People",
+            "name": "associated_people",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "post_type": [
+                "person"
             ],
-            "ui": 1
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_67e70dd5a9688"
+            ]
+        },
+        {
+            "key": "field_67e6bc321c595",
+            "label": "Associated grants",
+            "name": "associated_grants",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "post_type": [
+                "grant"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_67e701b507ccf",
+            "label": "Published year",
+            "name": "published_year",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 1,
+            "admin_column_position": "",
+            "admin_column_width": "",
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -40,26 +133,12 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "person"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
                 "value": "output"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "grant"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "side",
+    "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -67,5 +146,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1721051822
+    "modified": 1743427611
 }

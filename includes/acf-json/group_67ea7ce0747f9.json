@@ -1,7 +1,43 @@
 {
-    "key": "group_65dc6387d018d",
-    "title": "Details",
+    "key": "group_67ea7ce0747f9",
+    "title": "Grant - Details",
     "fields": [
+        {
+            "key": "field_67eaa57269a56",
+            "label": "Funder(s)",
+            "name": "grant_funder",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 1,
+            "admin_column_position": "",
+            "admin_column_width": "",
+            "post_type": [
+                "funder"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_67e70dd5a9688"
+            ]
+        },
         {
             "key": "field_6697a76074a8c",
             "label": "Start date",
@@ -57,6 +93,104 @@
             "admin_column_enabled": 0,
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_67ebbf5e1ea37",
+            "label": "Grant logo",
+            "name": "grant_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_67ea7ce08335f",
+            "label": "Associated Projects",
+            "name": "grant_projects",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 1,
+            "admin_column_position": "",
+            "admin_column_width": "",
+            "post_type": [
+                "project"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_6683d8d48c2c6"
+            ]
+        },
+        {
+            "key": "field_67ea7ce086e40",
+            "label": "Associated People",
+            "name": "grant_people",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 1,
+            "admin_column_position": "",
+            "admin_column_width": "",
+            "post_type": [
+                "person"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_67e70dd5a9688"
+            ]
         },
         {
             "key": "field_65dc6388599c4",
@@ -185,7 +319,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 15,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -193,6 +327,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0,
-    "modified": 1721214974
+    "show_in_rest": 1,
+    "modified": 1743503231
 }

@@ -1,6 +1,6 @@
 {
     "key": "group_6548fa3f1620c",
-    "title": "Outputs",
+    "title": "Project Outputs",
     "fields": [
         {
             "key": "field_6548fa3f1fe71",
@@ -16,6 +16,7 @@
                 "class": "",
                 "id": ""
             },
+            "admin_column_enabled": 0,
             "post_type": [
                 "output"
             ],
@@ -26,7 +27,7 @@
             "allow_null": 0,
             "bidirectional": 1,
             "bidirectional_target": [
-                "field_65158a0d40686"
+                "field_67e700db17ac6"
             ],
             "ui": 1
         }
@@ -49,5 +50,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709037769
+    "modified": 1743437419
 }

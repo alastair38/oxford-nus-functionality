@@ -31,13 +31,13 @@
         ]
     ],
     "menu_order": -10,
-    "position": "side",
-    "style": "default",
+    "position": "normal",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719917700
+    "modified": 1743426890
 }

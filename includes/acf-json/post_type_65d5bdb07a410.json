@@ -43,16 +43,16 @@
         "item_link_description": "A link to a grant."
     },
     "description": "",
-    "public": false,
+    "public": true,
     "hierarchical": false,
     "exclude_from_search": false,
-    "publicly_queryable": false,
+    "publicly_queryable": true,
     "show_ui": true,
     "show_in_menu": true,
     "admin_menu_parent": "",
     "show_in_admin_bar": true,
     "show_in_nav_menus": false,
-    "show_in_rest": true,
+    "show_in_rest": false,
     "rest_base": "",
     "rest_namespace": "wp\/v2",
     "rest_controller_class": "WP_REST_Posts_Controller",
@@ -63,13 +63,15 @@
     "plural_capability_name": "posts",
     "supports": [
         "title",
+        "editor",
         "excerpt"
     ],
     "taxonomies": "",
-    "has_archive": false,
-    "has_archive_slug": "",
+    "has_archive": true,
+    "has_archive_slug": "grants",
     "rewrite": {
-        "permalink_rewrite": "post_type_key",
+        "permalink_rewrite": "custom_permalink",
+        "slug": "grants",
         "with_front": "0",
         "feeds": "0",
         "pages": "0"
@@ -80,5 +82,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1721310192
+    "modified": 1743426952
 }
