@@ -2,11 +2,9 @@
     "key": "taxonomy_65d474fa4781a",
     "title": "Years",
     "menu_order": 0,
-    "active": true,
+    "active": false,
     "taxonomy": "pub_year",
-    "object_type": [
-        "output"
-    ],
+    "object_type": "",
     "advanced_configuration": 1,
     "import_source": "",
     "import_date": "",
@@ -72,5 +70,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1709045865
+    "modified": 1743688003
 }

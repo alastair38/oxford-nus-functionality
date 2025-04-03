@@ -2,11 +2,9 @@
     "key": "taxonomy_6682b77992c63",
     "title": "Grant Funders",
     "menu_order": 0,
-    "active": true,
+    "active": false,
     "taxonomy": "grant-funder",
-    "object_type": [
-        "grant"
-    ],
+    "object_type": "",
     "advanced_configuration": 1,
     "import_source": "",
     "import_date": "",
@@ -71,5 +69,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1720000533
+    "modified": 1743687970
 }
