@@ -3,6 +3,27 @@
     "title": "Person Details",
     "fields": [
         {
+            "key": "field_67fd188224ba1",
+            "label": "Academic title",
+            "name": "academic_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add the academic title you wish to precede your name on the public website. This is optional.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6513fdb1c1db2",
             "label": "Work title",
             "name": "work_title",
@@ -121,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721126314
+    "modified": 1744640256
 }
