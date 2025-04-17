@@ -65,6 +65,38 @@
             "admin_column_enabled": 0,
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_6800ea1c2fdbb",
+            "label": "Funded grants",
+            "name": "funded_grants",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "post_type": [
+                "grant"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_67eaa57269a56"
+            ]
         }
     ],
     "location": [
@@ -85,5 +117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1743430681
+    "modified": 1744890440
 }
