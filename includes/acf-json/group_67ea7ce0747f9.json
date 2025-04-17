@@ -67,7 +67,7 @@
             "elements": "",
             "bidirectional": 1,
             "bidirectional_target": [
-                "field_67e70dd5a9688"
+                "field_6800ea1c2fdbb"
             ]
         },
         {
@@ -394,5 +394,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1743687196
+    "modified": 1744899114
 }
