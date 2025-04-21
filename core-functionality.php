@@ -108,9 +108,6 @@ function blockhaus_load_blocks() {
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/curved-separator/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/funder/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/profile/block.json' );
-  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-collaborators/block.json' );
-  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-leads/block.json' );
-  register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/project-personnel/block.json' );
   register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/projects-list/block.json' );
 	register_block_type( plugin_dir_path( __FILE__ ) . '/includes/blocks/resources-link/block.json' );
 }
