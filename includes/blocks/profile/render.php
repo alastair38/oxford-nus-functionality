@@ -25,7 +25,28 @@ if( !empty($block['align']) ) {
 }
 
 $profile = get_field('profile');
-$simplified = get_field('simplified'); 
+$simplified = get_field('simplified');
+$biographyChoice = null;
+$biography = null;
+
+if(!$simplified && $profile):
+  
+  $biographyChoice = get_field('biography_choice');
+  
+  if($biographyChoice === 'hope'):
+    
+    $biography = get_field('hope_biography', $profile->ID);
+    
+  else:
+    
+    $biography = get_field('biography', $profile->ID);
+    
+  endif;
+
+endif;
+
+
+
 ?>
 
 <div id="profile-<?php echo $profile->ID;?>" class="flex flex-col items-center justify-between p-3 md:p-6 mb-6 w-full h-full border rounded-md gap-6">
@@ -35,10 +56,14 @@ $simplified = get_field('simplified');
   if( $profile ): 
   echo get_the_post_thumbnail($profile->ID, array( 80, 80), ['class' => ' rounded-full w-20 h-20 aspect-square object-cover'] );?>
   
-  <div class="text-center">
+  <div class="">
     
-    <h3 class="font-black"><?php echo esc_html( $profile->post_title ); ?></h3>
-    <p class="text-sm"><?php echo esc_html( get_field('work_title', $profile->ID) ); ?></p>
+    <h3 class="font-black text-center"><?php echo esc_html( $profile->post_title ); ?></h3>
+    <p class="text-sm text-center"><?php echo esc_html( get_field('work_title', $profile->ID) ); ?></p>
+    
+    <?php if(!$simplified):?>
+     <div class="mt-6"><?php echo $biography;?></div> 
+    <?php endif;?>
     
   </div>
  

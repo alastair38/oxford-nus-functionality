@@ -29,34 +29,6 @@
             "bidirectional_target": []
         },
         {
-            "key": "field_65cbb0c30c1d6",
-            "label": "Show HOPE biography",
-            "name": "alt_biog",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "Show the HOPE biography instead of the default biography",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_65ca5f12585e3",
-                        "operator": "!=",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
-        },
-        {
             "key": "field_65ca5f12585e3",
             "label": "Simplified Profile",
             "name": "simplified",
@@ -75,6 +47,40 @@
             "ui_on_text": "",
             "ui_off_text": "",
             "ui": 1
+        },
+        {
+            "key": "field_680258c63bfbe",
+            "label": "Biography",
+            "name": "biography_choice",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "Choose the biography to use in this block. Select Hope if this is to be used on the HOPE project page",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65ca5f12585e3",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "admin_column_enabled": 0,
+            "choices": {
+                "standard": "Standard",
+                "hope": "Hope"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 1,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -95,5 +101,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707847993
+    "modified": 1744984587
 }
