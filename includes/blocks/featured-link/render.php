@@ -54,8 +54,8 @@ endif;?>
 class="flex no-underline blockhaus-featured-link"
 rel="bookmark" aria-label="Read <?php echo get_the_title($featuredLink);?>">
 
-<InnerBlocks
-        class="grid grid-cols-1 w-full transition-all duration-250 md:grid-cols-2 hover:ring-2 ring-offset-2 hover:ring-contrast group items-center bg-neutral-light-100 rounded-md overflow-hidden"
+    <InnerBlocks
+        class="grid grid-cols-1 w-full transition-all duration-200 ring-1 ring-transparent md:grid-cols-2 ring-offset-2 hover:ring-contrast focus-visible:ring-contrast group items-center bg-neutral-light-100 rounded-md overflow-hidden"
         template="<?php echo esc_attr( wp_json_encode( $template ) ); ?>"
         templateLock="all"
     />
@@ -64,6 +64,8 @@ rel="bookmark" aria-label="Read <?php echo get_the_title($featuredLink);?>">
 
 <?php else:?>
     
-<em>This theme does not support the 'Featured Link' block. Please check that you have not deactivated the 'Blockhaus Functionality' plugin, which makes additional blocks available. You can safely delete this block if you cannot install the plugin or do not wish to use it.</em>
+<em>
+    <?php esc_html_e( "This theme does not support the 'Featured Link' block. Please check that you have not deactivated the 'Blockhaus Functionality' plugin, which makes additional blocks available. You can safely delete this block if you cannot install the plugin or do not wish to use it.", 'blockhaus' );?>  
+</em>
 
 <?php endif;?>
