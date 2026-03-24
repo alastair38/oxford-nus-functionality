@@ -49,31 +49,30 @@ endif;
 
 ?>
 
-<div id="profile-<?php echo $profile->ID;?>" class="flex flex-col items-center justify-between p-3 md:p-6 mb-6 w-full h-full border rounded-md gap-6">
- 
+<div id="profile-<?php echo $profile->ID;?>"
+  class="flex flex-col items-center justify-between p-3 md:p-6 mb-6 w-full h-full border rounded-md gap-6">
+
   <?php
   
   if( $profile ): 
   echo get_the_post_thumbnail($profile->ID, array( 80, 80), ['class' => ' rounded-full w-20 h-20 aspect-square object-cover'] );?>
-  
+
   <div class="">
-    
+
     <h3 class="font-black text-center"><?php echo esc_html( $profile->post_title ); ?></h3>
     <p class="text-sm text-center"><?php echo esc_html( get_field('work_title', $profile->ID) ); ?></p>
-    
+
     <?php if(!$simplified):?>
-     <div class="mt-6"><?php echo $biography;?></div> 
+    <div class="mt-6 space-y-6"><?php echo $biography;?></div>
     <?php endif;?>
-    
+
   </div>
- 
+
   <?php endif; ?>
 
-  <a class="gap-2 mx-auto w-fit no-underline items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-1 focus:ring-1 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast" href="<?php echo get_the_permalink( $profile->ID ); ?>">
+  <a class="gap-2 mx-auto w-fit no-underline items-center bg-contrast text-white text-sm px-3 py-1 rounded-full hover:ring-1 focus:ring-1 ring-offset-2 ring-transparent hover:ring-contrast focus:ring-contrast"
+    href="<?php echo get_the_permalink( $profile->ID ); ?>">
     <?php esc_html_e( 'OCNS Profile', 'blockhaus' );?>
   </a>
 
 </div>
-  
-  
-  
